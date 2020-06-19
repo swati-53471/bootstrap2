@@ -37,8 +37,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-6 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-3 align-self-center">
+                    <button type="submit" class="btn-sm btn-warning"><a href="#reserve">Reserve Table</a></button>
                 </div>
             </div>
         </div>
@@ -70,9 +73,14 @@
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p><div class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </div></p>
+            <div class="col-12 col-sm-8 col-md-9">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                        <p><div class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </div></p>
+                    </div>
+                    <img class="d-flex img-thumbnail ml-3 align-self-center" src="./img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -96,8 +104,50 @@
                 </div>
                             </div>
         </div>
+    
+        <div class="row row-content align-items-center">
+            
+            <div class="col-12 col-sm-8 col-md-8 offset-sm-2">
+                <div class="card">
+                    
+                    <h3 class="card-header bg-warning text-white" id="reserve">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group-row">
+                                <label for="guests" class="col-sm-2 col-form-label">Number of Guests</label>
+                                <div class="col-sm-5 btn-group" role="group">
+                                    <div class="form-radio form-radio-inline">
+                                        <input type="radio" class="form-radio-input" id="guest1" name="guests" value=""><label class="form-check-label" for="inline1">1 </label>
+                                    
+                                        <input type="radio" class="form-radio-input" id="guest2" name="guests" value=""><label class="form-check-label" for="inline1">2 </label>
+                                        <input type="radio" class="form-radio-input" id="guest3" name="guests" value=""><label class="form-check-label" for="inline1">3 </label>
+                                        <input type="radio" class="form-radio-input" id="guest4" name="guests" value=""><label class="form-check-label" for="inline1">4 </label>
+                                        <input type="radio" class="form-radio-input" id="guest5" name="guests" value=""><label class="form-check-label" for="inline1">5 </label>
+                                        <input type="radio" class="form-radio-input" id="guest6" name="guests" value=""><label class="form-check-label" for="inline1">6 </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-row">
+                                <label for="date-time" class="col-12 col-md-3 col-form-label">Date and Time</label>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-group-row">
+                                <div class=" col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">             
