@@ -29,12 +29,12 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginModal">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>
         </div>
     </nav>
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="login" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -85,9 +85,9 @@
                 </div>
                 
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-block nav-link btn-warning">Reserve Table</a>
+                    <a role="button" id="reserveModal" class="btn btn-block nav-link btn-warning">Reserve Table</a>
                 </div>
-                <div id="reserveModal" class="modal fade" role="dialog">
+                <div id="reserve" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg" role="content">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -134,7 +134,7 @@
                                     <br>
                                     <div class="form-group-row align-self-center">
                                         <div class=" col-10 col-offset-4 form-inline">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="close btn btn-secondary" data-dismiss="modal">Cancel</button>
                                             <button type="submit" class="btn btn-primary">Reserve</button>
                                         </div>
                                     </div>
@@ -304,23 +304,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel({interval:2000});
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
     </body>
 
 </html>
